@@ -10,8 +10,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Meals Categories" component={CategoriesScreen} />
-        <Stack.Screen name="Meals Overview" component={MealsOverview}/>
+        <Stack.Screen name="MealsCategories" component={CategoriesScreen} />
+        <Stack.Screen name="MealsOverview" component={MealsOverview}/>
       </Stack.Navigator>  
     </NavigationContainer>
   );
