@@ -16,8 +16,14 @@ const MealsOverview = ({ route, navigation }) => {
   }, [catId, navigation]);
 
   const renderMealItem = (itemData) => {
+    // const onPressHandler = () => {
+    //   navigation.navigate("MealDetail", {
+    //     mealId: itemData.item.id,
+    //   });
+    // };
     return (
-      <MealItem 
+      <MealItem
+        id={itemData.item.id}
         title={itemData.item.title}
         imageurl={itemData.item.imageUrl}
         affordability={itemData.item.affordability}
